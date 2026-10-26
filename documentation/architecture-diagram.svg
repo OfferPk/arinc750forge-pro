@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650" style="background:#07090e; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="grad-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Header -->
+  <rect x="30" y="25" width="940" height="70" rx="8" fill="url(#grad-card)" stroke="#1e293b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="55" y="60" fill="#06b6d4" font-size="22" font-weight="800" letter-spacing="-0.5">ARINC 750 AIRBORNE VHF TRANSCEIVER &amp; VDL MODE 2 ARCHITECTURE</text>
+  <text x="55" y="80" fill="#94a3b8" font-size="12">8.33 kHz / 25 kHz Channeling, 25W DSB-AM Voice, 31.5 kbps D8PSK VDL2 &amp; ARINC 429 Bus</text>
+
+  <!-- Left: Cockpit Audio & RMP Tuning -->
+  <rect x="30" y="115" width="280" height="495" rx="8" fill="url(#grad-card)" stroke="#1e293b" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="115" width="280" height="38" rx="8" fill="#1e293b"/>
+  <text x="50" y="140" fill="#f8fafc" font-size="14" font-weight="700">COCKPIT TUNING &amp; AUDIO</text>
+
+  <!-- Radio Management Panel RMP -->
+  <rect x="50" y="170" width="240" height="90" rx="6" fill="#18202c" stroke="#334155"/>
+  <text x="65" y="195" fill="#38bdf8" font-size="12" font-weight="700">Radio Management Panel (RMP)</text>
+  <text x="65" y="215" fill="#94a3b8" font-size="11">• 8.33 kHz / 25 kHz Frequency Tuning</text>
+  <text x="65" y="235" fill="#94a3b8" font-size="11">• Active ⮂ Standby Transfer Logic</text>
+  <text x="65" y="250" fill="#34d399" font-size="10">ARINC 429 Label 030 (BCD Tuning)</text>
+
+  <!-- Audio Control Panel ACP & PTT -->
+  <rect x="50" y="275" width="240" height="90" rx="6" fill="#18202c" stroke="#334155"/>
+  <text x="65" y="300" fill="#34d399" font-size="12" font-weight="700">Audio Management Unit (ACP)</text>
+  <text x="65" y="320" fill="#94a3b8" font-size="11">• Push-To-Talk (PTT) Switch Keying</text>
+  <text x="65" y="340" fill="#94a3b8" font-size="11">• Audio Sidetone Loopback Monitoring</text>
+  <text x="65" y="355" fill="#38bdf8" font-size="10">35-Second Anti-Stuck-Mic Timeout</text>
+
+  <!-- CMU / ATSU Datalink Interface -->
+  <rect x="50" y="380" width="240" height="90" rx="6" fill="#18202c" stroke="#334155"/>
+  <text x="65" y="405" fill="#fbbf24" font-size="12" font-weight="700">CMU / ATSU Datalink Router</text>
+  <text x="65" y="425" fill="#94a3b8" font-size="11">• ATN B1/B2 CPDLC Flight Clearances</text>
+  <text x="65" y="445" fill="#94a3b8" font-size="11">• ACARS OOOI Airline Flight Events</text>
+  <text x="65" y="460" fill="#94a3b8" font-size="10">Routes via Dedicated VHF 3 Datalink</text>
+
+  <!-- VHF Antenna System -->
+  <rect x="50" y="485" width="240" height="105" rx="6" fill="#18202c" stroke="#334155"/>
+  <text x="65" y="510" fill="#c084fc" font-size="12" font-weight="700">Fuselage Blade Antenna Array</text>
+  <text x="65" y="530" fill="#94a3b8" font-size="11">• Top Fuselage Antenna (VHF 1 Voice)</text>
+  <text x="65" y="550" fill="#94a3b8" font-size="11">• Bottom Fuselage Antenna (VHF 2 Voice)</text>
+  <text x="65" y="570" fill="#34d399" font-size="10">• Aft Top Antenna (VHF 3 VDL Mode 2)</text>
+
+  <!-- Middle: Triple VHF Transceiver Core LRUs -->
+  <rect x="340" y="115" width="320" height="495" rx="8" fill="url(#grad-card)" stroke="#0891b2" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="340" y="115" width="320" height="38" rx="8" fill="#0891b2"/>
+  <text x="360" y="140" fill="#ffffff" font-size="14" font-weight="800">TRIPLE VHF TRANSCEIVER (4-MCU)</text>
+
+  <rect x="360" y="170" width="280" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="375" y="195" fill="#10b981" font-size="13" font-weight="700">VHF 1 TRANSCEIVER (CAPTAIN)</text>
+  <text x="375" y="215" fill="#cbd5e1" font-size="11">• Primary ATC Air-to-Ground Voice Channel</text>
+  <text x="375" y="235" fill="#cbd5e1" font-size="11">• 25W DSB-AM Voice / 8.33 kHz Narrowband</text>
+  <text x="375" y="260" fill="#10b981" font-size="11" font-weight="600">STATUS: ACTIVE (SDI 1 / BUS A)</text>
+
+  <rect x="360" y="295" width="280" height="110" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="375" y="320" fill="#94a3b8" font-size="13" font-weight="700">VHF 2 TRANSCEIVER (FIRST OFFICER)</text>
+  <text x="375" y="340" fill="#94a3b8" font-size="11">• Co-Pilot / Company Operations Voice</text>
+  <text x="375" y="360" fill="#94a3b8" font-size="11">• 121.500 MHz Emergency Guard Receiver</text>
+  <text x="375" y="385" fill="#f59e0b" font-size="11" font-weight="600">STATUS: ACTIVE (SDI 2 / BUS B)</text>
+
+  <rect x="360" y="420" width="280" height="170" rx="6" fill="#18202c" stroke="#06b6d4"/>
+  <text x="375" y="445" fill="#38bdf8" font-size="13" font-weight="700">VHF 3 TRANSCEIVER (VDL MODE 2)</text>
+  <text x="375" y="465" fill="#cbd5e1" font-size="11">• Dedicated Digital Datalink Transceiver</text>
+  <text x="375" y="485" fill="#cbd5e1" font-size="11">• D8PSK Modulation: 10,500 Baud / 31,500 bps</text>
+  <text x="375" y="505" fill="#cbd5e1" font-size="11">• AVLC Link Control &amp; CCITT CRC-16 Checksum</text>
+  <text x="375" y="525" fill="#cbd5e1" font-size="11">• Subnetwork Protocol for ATN B1/B2 &amp; ACARS</text>
+  <text x="375" y="555" fill="#10b981" font-size="11" font-weight="700">RTCA DO-224C / ED-92B COMPLIANT</text>
+  <text x="375" y="575" fill="#34d399" font-size="10">STATUS: DATALINK ACTIVE (SDI 3 / BUS C)</text>
+
+  <!-- Right: 8.33 kHz Channeling & ARINC 429 Bus Words -->
+  <rect x="690" y="115" width="280" height="495" rx="8" fill="url(#grad-card)" stroke="#1e293b" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="690" y="115" width="280" height="38" rx="8" fill="#1e293b"/>
+  <text x="710" y="140" fill="#f8fafc" font-size="14" font-weight="700">8.33 kHz CHANNEL MATRIX &amp; BUS</text>
+
+  <!-- 8.33 kHz Mapping Table -->
+  <rect x="710" y="170" width="240" height="160" rx="6" fill="#18202c" stroke="#334155"/>
+  <text x="725" y="195" fill="#38bdf8" font-size="12" font-weight="700">8.33 kHz Channel Name Mapping</text>
+  <text x="725" y="215" fill="#94a3b8" font-size="11">• Name 118.005 -> RF 118.0000 MHz</text>
+  <text x="725" y="235" fill="#94a3b8" font-size="11">• Name 118.010 -> RF 118.0083 MHz</text>
+  <text x="725" y="255" fill="#94a3b8" font-size="11">• Name 118.015 -> RF 118.0167 MHz</text>
+  <text x="725" y="275" fill="#94a3b8" font-size="11">• Name 118.025 -> RF 118.0250 (25k)</text>
+  <text x="725" y="295" fill="#94a3b8" font-size="11">• Name 118.030 -> RF 118.0250 (8.3k)</text>
+  <text x="725" y="315" fill="#34d399" font-size="10">EU Regulation 1079/2012 Mandated</text>
+
+  <!-- ARINC 429 Bus Words -->
+  <rect x="710" y="345" width="240" height="245" rx="6" fill="#18202c" stroke="#334155"/>
+  <text x="725" y="370" fill="#34d399" font-size="12" font-weight="700">ARINC 429 Digital Bus Words</text>
+  <text x="725" y="390" fill="#94a3b8" font-size="11">• Label 030: Tuning Frequency (BCD)</text>
+  <text x="725" y="410" fill="#94a3b8" font-size="11">• Label 270: Transceiver Status Word</text>
+  <text x="725" y="430" fill="#94a3b8" font-size="11">• Label 350: Maintenance BITE Word</text>
+  <text x="725" y="455" fill="#06b6d4" font-size="11" font-weight="700">Bit 32 Odd Parity: Strictly Enforced</text>
+  <text x="725" y="475" fill="#38bdf8" font-size="10">Destination: RMP, ACP, CMU, ATSU</text>
+  <text x="725" y="495" fill="#34d399" font-size="10">Output Power: 25 Watts Nominal (+44 dBm)</text>
+  <text x="725" y="515" fill="#fbbf24" font-size="10">D8PSK 8-Phase Constellation Mapping</text>
+  <text x="725" y="540" fill="#10b981" font-size="11" font-weight="700">ARINC 750 CERTIFIED</text>
+</svg>
